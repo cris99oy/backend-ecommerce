@@ -13,3 +13,6 @@ app.use('/api/usuarios', usuariosRoutes);
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
+const productosRoutes = require('./routes/productos.routes');
+app.use('/api/productos', productosRoutes);
